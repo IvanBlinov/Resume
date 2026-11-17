@@ -28,7 +28,7 @@
 
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
 
-\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
+\geometry{left=2cm, top=1.0cm, right=2cm, bottom=1.0cm, footskip=.5cm} % Configure page margins with geometry
  
 \fontdir[fonts/] % Specify the location of the included fonts
 
@@ -44,17 +44,19 @@
 
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
 
+% Placeholder for a number you still need to fill in: \ph{N} prints a red [N].
+% Replace every \ph{...} with the real figure before sending the resume out.
+\newcommand{\ph}[1]{\textcolor{red}{\textbf{[#1]}}}
+
 %----------------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %----------------------------------------------------------------------------------------
 
 \name{Ivan}{Blinov}
-\address{Kyiv, Ukraine}
-\mobile{(+38) 097-576-13-17}
+\mobile{(+1) 604-537-88-30}
 
 \email{iv.blinovv@gmail.com}
-\github{IvanBlinov}
 
 \position{Software Engineer} % Your expertise/fields
 
@@ -69,12 +71,13 @@
 
 \makecvheader % Print the header
 
-\input{resume/education.tex}
 \input{resume/skills.tex}
+\vspace*{-0.2cm}
 \input{resume/employment.tex}
-\newpage
-\input{resume/projects.tex}
-
+\vspace*{-0.2cm}
+\input{resume/education.tex}
+\vspace*{-0.8cm}
+% \input{resume/projects.tex}
 \input{resume/honors.tex}
 
 \end{document}
